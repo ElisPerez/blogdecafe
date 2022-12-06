@@ -7,7 +7,7 @@
     <title>BlogDeCafé</title>
 
     <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
+    <link rel="prefetch" href="nosotros.html" as="document" />
 
     <!-- Preload Normalize -->
     <link rel="preload" href="css/normalize.css" as="style" />
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Preload an image -->
-    <link rel="preload" href="img/blog1.jpg" as="image" />
+    <!-- <link rel="preload" href="img/blog1.jpg" as="image" /> -->
   </head>
   <body>
     <header class="header">
@@ -58,7 +58,10 @@
 
         <article class="entrada">
           <div class="entrada__imagen">
-            <img loading="lazy" src="img/blog1.jpg" alt="Imagen blog" />
+            <picture>
+              <source loading="lazy" srcset="img/blog1.webp" type="image/webp" />
+              <img loading="lazy" src="img/blog1.jpg" alt="Imagen blog" />
+            </picture>
           </div>
 
           <div class="entrada__contenido">
@@ -75,7 +78,10 @@
 
         <article class="entrada">
           <div class="entrada__imagen">
-            <img loading="lazy" src="img/blog2.jpg" alt="Imagen blog" />
+            <picture>
+              <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+              <img loading="lazy" src="img/blog2.jpg" alt="Imagen blog" />
+            </picture>
           </div>
 
           <div class="entrada__contenido">
@@ -92,7 +98,10 @@
 
         <article class="entrada">
           <div class="entrada__imagen">
-            <img loading="lazy" src="img/blog3.jpg" alt="Imagen blog" />
+            <picture>
+              <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+              <img loading="lazy" src="img/blog3.jpg" alt="Imagen blog" />
+            </picture>
           </div>
 
           <div class="entrada__contenido">
