@@ -83,8 +83,15 @@ img {
 }
 
 /* HEADER */
-.header {
+.webp .header {
+  background-image: url(../img/banner.webp);
+}
+
+.no-webp .header {
   background-image: url(../img/banner.jpg);
+}
+
+.header {
   height: 60rem;
   background-size: cover; /* Toma todo el espacio disponible */
   background-repeat: no-repeat;
@@ -283,7 +290,6 @@ img {
 .curso__info {
   font-size: 2rem;
 }
-
 
 /* Contacto */
 .contacto-bg {
